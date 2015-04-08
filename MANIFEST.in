@@ -1,0 +1,2 @@
+recursive-include templates *
+global-include *.txt
