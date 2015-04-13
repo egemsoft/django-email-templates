@@ -1,0 +1,36 @@
+{% extends 'email/base.html' %}
+
+{% block header_tr %}
+  <tr>
+    <td background="{{ bgurl|default:"https://cdn.rawgit.com/egemsoft/django-email-templates/master/emailtemplates/static/email-templates/bg-warning.png" }}" bgcolor="#F28441"
+        valign="top"
+        style="background: url({{ bgurl|default:"https://cdn.rawgit.com/egemsoft/django-email-templates/master/emailtemplates/static/email-templates/bg-warning.png" }}) no-repeat top; background-color: #F28441; background-position: top;" height="150">
+      <!--[if gte mso 9]>
+      <v:rect xmlns:v="urn:schemas-microsoft-com:vml" fill="true" stroke="false"
+              style="mso-width-percent:1000;height:150px;">
+        <v:fill type="tile" src="{{ bgurl|default:"https://cdn.rawgit.com/egemsoft/django-email-templates/master/static/email-templates/bg-warning.png" }}" color="#F28441"/>
+        <v:textbox inset="0,0,0,0">
+      <![endif]-->
+      <div>
+        <center>
+          <table cellspacing="0" cellpadding="0" width="530" height="150" class="w320">
+            <tr>
+              <td valign="middle"
+                  style="vertical-align:middle; padding-right: 15px; padding-left: 15px; text-align:left;"
+                  class="mobile-center" height="150">
+                <h1>{{ title }}</h1>
+                {% if subtitle %}
+                  <h2>{{ subtitle }}</h2>
+                {% endif %}
+              </td>
+            </tr>
+          </table>
+        </center>
+      </div>
+      <!--[if gte mso 9]>
+      </v:textbox>
+      </v:rect>
+      <![endif]-->
+    </td>
+  </tr>
+{% endblock %}
