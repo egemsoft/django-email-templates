@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='email_templates',
-    version='0.1.0',
+    version='0.2.1',
     author='',
     author_email='',
     packages=find_packages(),
