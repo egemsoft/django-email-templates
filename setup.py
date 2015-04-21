@@ -8,7 +8,7 @@ setup(
     packages=find_packages(),
     url='',
     description='Django email templates',
-    long_description=open('README.md').read(),
+    long_description='',
     install_requires=[],
     dependency_links=[],
     include_package_data=True,
